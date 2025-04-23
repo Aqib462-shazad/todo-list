@@ -8,7 +8,7 @@ const EditTaskPopup= ({ modal, toggle, updateTask, taskObj }) => { // ✅ Fixed 
     const handleChange = (e) => {
         const {name, value} = e.target
 
-        if( name == "taskName"){
+        if( name === "taskName"){
             setTaskName(value)
         }else{
             setDescription(value)
@@ -20,7 +20,7 @@ const EditTaskPopup= ({ modal, toggle, updateTask, taskObj }) => { // ✅ Fixed 
             setTaskName(taskObj.Name || '');
             setDescription(taskObj.Description || '');
         }
-    }, [modal]);
+    }, [modal, taskObj.Name, taskObj.Description]);
     
     
    
