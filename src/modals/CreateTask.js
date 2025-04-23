@@ -26,12 +26,12 @@
                 <ModalHeader toggle={toggle}>Create your Task</ModalHeader>
                 <ModalBody>
                 <form>
-                    <div className="form-goup">
+                    <div className="form-group">
                         <label>Task Name</label>
                         <input type="text" className="form-control" value={taskName} onChange={handleChange} name = "taskName"/>
                         
                     </div>
-                    <div className="form-goup"> 
+                    <div className="form-group"> 
                         <label> Description</label>
                         <textarea rows="5" className="form-control" value={description} onChange={handleChange} name = "description"></textarea>
                     </div>
